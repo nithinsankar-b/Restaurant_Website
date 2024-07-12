@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Garamond, serif;
+}
+
+body{
+    background-color: lightcyan;
+}
+
+#mainlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.navigate{
+    background-color: green;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 2px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navigate a{
+    display: inline-block;
+    padding: 20px;
+    margin: 0 30px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Garamond, serif;
+    color: white;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigate a:hover{
+    background-color: yellowgreen;
+    color: black;
+}
+  
+.video-container {
+    position: relative;
+    max-height: 500px; 
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+  
+.video-container video {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.promo {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 100, 0, 0.5);
+}
+
+.promo:hover{
+    background: darkgreen;
+    transition: background 0.3s ease;
+}
+
+.promo h2{
+    font-size: 28px; 
+}
+
+.promo p{
+    font-size: 18px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between the items */
+    gap: 10px; /* Add space between the items */
+    margin: 12px;
+  }
+  
+.image-container {
+    position: relative;
+    width: 32%; /* Each container takes up 30% of the width */
+    height: 300px; /* Set a fixed height for the containers */
+    overflow: hidden;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
+  }
+  
+.image-container img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container proportionally */
+    display: block;
+  }
+  
+  
+  .item {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: background 0.3s ease;
+  }
+  .item:hover{
+    background: rgba(0, 0, 0, 1);
+  }
+  
+  .item h2, .item p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  .item h2 {
+    font-size: 24px;
+  }
+  
+  .item p {
+    font-size: 16px;
+  }
+  
+  .footer{
+    background-color: lightgreen;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    padding: 2px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.2);
+  }
+
+  .footer img{
+    margin-left: 10px;
+    height: 50px;
+    width: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .footer .footer_text{
+    text-align: right; 
+    flex: 1;
+    margin-top: 25px;
+    margin-right: 10px;
+  }
